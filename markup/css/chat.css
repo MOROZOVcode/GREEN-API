@@ -1,0 +1,83 @@
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	overflow: hidden;
+	background: #111C22;
+	display: flex;
+	justify-content: center;
+}
+
+.chat {
+	height: 100%;
+	width: 835px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(../img/chat_background.png);
+}
+
+.chat__header {
+	height: 5rem;
+	width: 100%;
+	background: #1F2C34;
+}
+
+.chat__contact {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	margin-left: 8rem;
+}
+
+.contact__avatar {
+	height: 3rem;
+}
+
+.chat__contact-numbet {
+	margin-left: 1rem;
+}
+
+.chat__numbet {
+	font-size: 1.5rem;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.chat__container {
+	height: 100%;
+}
+
+.chat__footer {
+	height: 5rem;
+	width: 100%;
+	background: #1F2C34;
+	padding: 0 5rem 0 5rem;
+}
+
+.chat__form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.chat__form-wrapper--input {
+	width: 100%;
+	margin-right: 2rem;
+}
+
+.chat__input {
+	width: 100%;
+	height: 2.5rem;
+	resize: none;
+	background: #2B3942;
+	border-radius: 10px;
+	overflow-wrap: break-word;
+	padding: 0.5rem 2rem;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+.chat__submit {
+	background-color: inherit;
+}

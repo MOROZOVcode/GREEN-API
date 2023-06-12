@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/chat.css" />
     <title>GREEN-API/chat</title>
   </head>
-  <body></body>
+  <body>
+    <main class="chat">
+      <div class="chat__header">
+        <div class="chat__contact">
+          <div class="chat__contact-avatar">
+            <img
+              class="contact__avatar"
+              src="./img/contact_avatar.png"
+              alt="contact-avatar"
+            />
+          </div>
+          <div class="chat__contact-numbet">
+            <p class="chat__numbet">+79955836252</p>
+          </div>
+        </div>
+      </div>
+      <div class="chat__container"></div>
+      <div class="chat__footer">
+        <form class="chat__form" action="">
+          <div class="chat__form-wrapper chat__form-wrapper--input">
+            <textarea
+              class="chat__input"
+              cols="30"
+              rows="10"
+              autofocus
+            ></textarea>
+          </div>
+          <div class="chat__form-wrapper">
+            <button class="chat__submit">
+              <img src="./img/chat_submit.png" alt="" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
