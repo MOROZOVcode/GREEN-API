@@ -4,7 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <title>GREEN-API/login</title>
   </head>
-  <body></body>
+  <body>
+    <header></header>
+    <main>
+      <div class="login__container">
+        <div class="login__wrapper">
+          <div class="login__title">
+            <h1 class="title__text">Авторизация</h1>
+          </div>
+          <form class="login__form">
+            <div class="login__input">
+              <div class="login__input-wrapper">
+                <label for="IdInstance"> IdInstance </label>
+                <input
+                  id="IdInstance"
+                  type="text"
+                  name="IdInstance"
+                  required
+                  placeholder="gd56Y3GJSGT"
+                />
+              </div>
+              <div class="login__input-wrapper">
+                <label for="ApiTokenInstance"> ApiTokenInstance </label>
+                <input
+                  id="ApiTokenInstance"
+                  type="text"
+                  name="ApiTokenInstance"
+                  required
+                  placeholder="gd56Y3GJSGT"
+                />
+              </div>
+            </div>
+            <div class="login__title">
+              <h1 class="title__text">Написать пользователю</h1>
+            </div>
+            <div class="login__input">
+              <div class="login__input-wrapper">
+                <label for="IdInstance"> Номер телефона </label>
+                <input
+                  id="IdInstance"
+                  type="number"
+                  name="IdInstance"
+                  required
+                  placeholder="+79955836252"
+                  step="0.01"
+                />
+              </div>
+              <div class="login__input-wrapper login__input-wrapper--button">
+                <button class="login__submit" type="submit">Начать чат</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

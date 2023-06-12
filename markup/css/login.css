@@ -1,0 +1,88 @@
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	max-height: 100wh;
+	overflow: hidden;
+	background: #111C22;
+}
+
+header {
+	max-width: 100%;
+	height: 200px;
+	background: #4CAA85;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.login__container {
+	display: flex;
+	justify-content: center;
+	width: 1000px;
+	height: 835px;
+	background: #FFFEFE;
+	border-radius: 4px 4px 0px 0px;
+	margin-top: -5rem;
+}
+
+.login__wrapper {
+	width: 700px;
+}
+
+.login__wrapper label {
+	font-size: 2rem;
+}
+
+.login__wrapper input {
+	margin-top: 10px;
+	height: 70px;
+	border: 2px solid #41525D;
+	border-radius: 10px;
+}
+
+.login__title {
+	margin-top: 6rem;
+}
+
+.title__text {
+	font-size: 3rem;
+}
+
+.login__input {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	font-size: 2rem;
+}
+
+.login__input-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+}
+
+.login__input-wrapper input {
+	padding-left: 1rem;
+}
+
+.login__input-wrapper--button {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.login__submit {
+	height: 70px;
+	background: #4CAA85;
+	box-shadow: inset 0px -6px 13px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	font-size: 2rem;
+	color: #FFFFFF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
