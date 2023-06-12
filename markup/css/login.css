@@ -1,16 +1,20 @@
-body {
+.page {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	overflow: hidden;
+	height: 100%;
+}
+
+.page__login {
 	background: #111C22;
 }
 
-header {
+.login__header {
 	max-width: 100%;
-	height: 200px;
+	height: 11rem;
 	background: #4CAA85;
 }
 
-main {
+.login {
 	display: flex;
 	justify-content: center;
 }
@@ -18,15 +22,15 @@ main {
 .login__container {
 	display: flex;
 	justify-content: center;
-	width: 1000px;
-	height: 835px;
+	width: 60rem;
+	height: 60rem;
 	background: #FFFEFE;
 	border-radius: 4px 4px 0px 0px;
 	margin-top: -5rem;
 }
 
 .login__wrapper {
-	width: 700px;
+	width: 52rem;
 }
 
 .login__wrapper label {
@@ -34,8 +38,8 @@ main {
 }
 
 .login__wrapper input {
-	margin-top: 10px;
-	height: 70px;
+	margin-top: 1rem;
+	height: 5rem;
 	border: 2px solid #41525D;
 	border-radius: 10px;
 }
@@ -51,7 +55,7 @@ main {
 .login__input {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 40px;
+	margin-top: 2rem;
 	font-size: 2rem;
 }
 
@@ -72,7 +76,7 @@ main {
 }
 
 .login__submit {
-	height: 70px;
+	height: 5rem;
 	background: #4CAA85;
 	box-shadow: inset 0px -6px 13px rgba(0, 0, 0, 0.15);
 	border-radius: 10px;
