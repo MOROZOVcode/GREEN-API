@@ -89,3 +89,46 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
+
+@media (max-width: 800px) {
+
+	.login__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1rem;
+	}
+
+	.login__title {
+		margin-top: 2rem;
+	}
+
+	.login__input {
+		flex-direction: column;
+		margin-top: 0rem;
+	}
+
+	.login__input-wrapper {
+		width: 100%;
+		margin-top: 2rem;
+
+	}
+
+	.login__wrapper input {
+		margin-top: 0.5rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.login__container {
+		margin-top: -7rem;
+	}
+
+	.title__text {
+		font-size: 2.5rem;
+	}
+
+	.login__wrapper input {
+		height: 4rem;
+	}
+}
