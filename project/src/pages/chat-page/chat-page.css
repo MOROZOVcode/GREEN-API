@@ -1,0 +1,154 @@
+.page {
+	height: 100%;
+}
+
+.page__chat {
+	display: flex;
+	justify-content: center;
+	background: #111C22;
+	color: #FFFFFF;
+}
+
+.chat {
+	height: 100%;
+	width: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(../../../public/img/chat_background.png);
+}
+
+.chat__header {
+	height: 5rem;
+	width: 100%;
+	background: #1F2C34;
+}
+
+.chat__contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	margin: auto 5rem;
+}
+
+.chat__contact-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.contact__avatar {
+	height: 3rem;
+}
+
+.chat__contact-numbet {
+	margin-left: 1rem;
+}
+
+.chat__numbet {
+	font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+.chat__container {
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+	padding: 0 5rem;
+	overflow-y: scroll;
+}
+
+.chat__wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column-reverse;
+	overflow-y: scroll;
+}
+
+.chat__wrapper-mesage {
+	display: flex;
+	width: 100%;
+	margin: 0.5rem auto;
+}
+
+.chat__wrapper-mesage.sent {
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.chat__mesage {
+	max-width: 45%;
+	background: #4CAA85;
+	box-shadow: inset 0px -6px 13px rgba(0, 0, 0, 0.15);
+	border-radius: 1.5rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+	word-break: break-word;
+}
+
+.chat__mesage.sent {
+	background: #4CAA85;
+	border-top-right-radius: 0;
+}
+
+.chat__mesage.received {
+	background: #646C71;
+	border-top-left-radius: 0;
+}
+
+.chat__footer {
+	height: 5rem;
+	width: 100%;
+	background: #1F2C34;
+	padding: 0 5rem;
+}
+
+.chat__form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.chat__form-wrapper--input {
+	width: 100%;
+	margin-right: 2rem;
+}
+
+.chat__input {
+	width: 100%;
+	height: 2.5rem;
+	resize: none;
+	background: #2B3942;
+	border-radius: 10px;
+	overflow-wrap: break-word;
+	padding: 0.5rem 2rem;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+.chat__submit {
+	background-color: inherit;
+}
+
+@media (max-width: 650px) {
+	.chat__contact {
+		margin: auto 2rem;
+	}
+
+	.chat__container {
+		padding: 0 1rem;
+	}
+
+	.chat__mesage {
+		max-width: 85%;
+	}
+
+	.chat__footer {
+		padding: 0px 1rem;
+	}
+
+}
