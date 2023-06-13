@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './chat-page.css';
 
 export default function ChatPage() {
@@ -19,13 +20,13 @@ export default function ChatPage() {
               </div>
             </div>
             <div className='chat__exit'>
-              <a href='/' className='chat__exit-link'>
+              <Link to='/' className='chat__exit-link'>
                 <img
                   className='contact__avatar'
                   src='img/exit.svg'
                   alt='contact-avatar'
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
