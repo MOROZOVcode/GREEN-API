@@ -109,7 +109,7 @@ export default function ChatPage() {
                 className='chat__input'
                 cols='30'
                 rows='10'
-                autofocus
+                autoFocus
               ></textarea>
             </div>
             <div className='chat__form-wrapper'>
