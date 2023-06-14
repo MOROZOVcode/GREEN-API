@@ -123,10 +123,18 @@ input::-webkit-inner-spin-button {
 	}
 
 	.title__text {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 
 	.login__wrapper input {
+		height: 3rem;
+	}
+
+	.login__submit {
 		height: 4rem;
+	}
+
+	.title__text--head {
+		font-size: 3rem;
 	}
 }

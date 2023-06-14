@@ -8,7 +8,7 @@ export default function LoginPage() {
         <div className='login__container'>
           <div className='login__wrapper'>
             <div className='login__title'>
-              <h1 className='title__text'>Авторизация</h1>
+              <h1 className='title__text title__text--head'>Авторизация</h1>
             </div>
             <form className='login__form'>
               <div className='login__input'>
@@ -34,7 +34,7 @@ export default function LoginPage() {
                 </div>
               </div>
               <div className='login__title'>
-                <h1 className='title__text'>Написать пользователю</h1>
+                <h2 className='title__text'>Написать пользователю</h2>
               </div>
               <div className='login__input'>
                 <div className='login__input-wrapper'>

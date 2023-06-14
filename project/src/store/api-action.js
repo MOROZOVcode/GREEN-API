@@ -13,7 +13,10 @@ export const fetchMessageAction = createAsyncThunk(
 
 export const dropMessageAction = createAsyncThunk(
   'chat/dropMessage',
-  async ({ receiptId }, { dispatch, extra: api }) => {
+  async (
+    { idInstance, apiTokenInstance, receiptId },
+    { dispatch, extra: api }
+  ) => {
     await api.delete(
       `${APIRoute.idInstance}${idInstance}${APIRoute.deleteNot}/${apiTokenInstance}/${receiptId}`
     );

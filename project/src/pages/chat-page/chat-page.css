@@ -50,6 +50,10 @@
 	color: #FFFFFF;
 }
 
+.chat__exit-img {
+	height: 2rem;
+}
+
 .chat__container {
 	display: flex;
 	align-items: flex-end;
@@ -65,6 +69,10 @@
 	align-items: flex-end;
 	flex-direction: column-reverse;
 	overflow-y: scroll;
+}
+
+.chat__wrapper::-webkit-scrollbar {
+	width: 0;
 }
 
 .chat__wrapper-message {
@@ -136,7 +144,7 @@
 
 @media (max-width: 650px) {
 	.chat__contact {
-		margin: auto 2rem;
+		margin: auto 1rem;
 	}
 
 	.chat__container {
@@ -149,6 +157,10 @@
 
 	.chat__footer {
 		padding: 0px 1rem;
+	}
+
+	.chat__form-wrapper--input {
+		margin-right: 1rem;
 	}
 
 }

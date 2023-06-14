@@ -22,9 +22,9 @@ export default function ChatPage() {
             <div className='chat__exit'>
               <Link to='/' className='chat__exit-link'>
                 <img
-                  className='contact__avatar'
+                  className='chat__exit-img'
                   src='img/exit.svg'
-                  alt='contact-avatar'
+                  alt='chat-exit'
                 />
               </Link>
             </div>
