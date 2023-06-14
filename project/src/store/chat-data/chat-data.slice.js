@@ -12,12 +12,13 @@ export const chatData = createSlice({
   name: NameSpace.chat,
   initialState,
   reducers: {},
-  extraReducer(builder) {
+  extraReducers(builder) {
     builder
       .addCase(fetchMessageAction.fulfilled, (state, action) => {
         state.receiptId = action.payload.receiptId;
         state.idMessage = action.payload.body.idMessage;
-        state.textMessage = action.payload.body.messageData.typeMessage;
+        state.textMessage =
+          action.payload.body.messageData.textMessageData.textMessage;
       })
       .addCase(dropMessageAction.fulfilled, (state) => {
         state.receiptId = null;
