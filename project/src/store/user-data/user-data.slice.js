@@ -17,11 +17,11 @@ export const userData = createSlice({
     setApiTokenUser: (state, action) => {
       state.apiTokenInstance = action.payload;
     },
-    addnumberPhoneContact: (state, action) => {
+    setNumberPhoneContact: (state, action) => {
       state.numberPhoneContact = action.payload;
     },
   },
 });
 
-export const { setIdUser, setApiTokenUser, addnumberPhoneContact } =
+export const { setIdUser, setApiTokenUser, setNumberPhoneContact } =
   userData.actions;

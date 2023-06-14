@@ -1,6 +1,28 @@
+import { useAppDispatch } from '../../hooks';
+import {
+  setApiTokenUser,
+  setIdUser,
+  setNumberPhoneContact,
+} from '../../store/user-data/user-data.slice';
 import './login-page.css';
+import { useRef } from 'react';
 
 export default function LoginPage() {
+  const dispatch = useAppDispatch();
+
+  const idInstanceRef = useRef(null);
+  const apiTokenInstanceRef = useRef(null);
+  const numberPhoneContactRef = useRef(null);
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    dispatch(setIdUser(Number(idInstanceRef.current.value)));
+    dispatch(setApiTokenUser(apiTokenInstanceRef.current.value));
+    dispatch(
+      setNumberPhoneContact(Number(numberPhoneContactRef.current.value))
+    );
+  };
+
   return (
     <div className='page page__login'>
       <header className='login__header'></header>
@@ -10,7 +32,7 @@ export default function LoginPage() {
             <div className='login__title'>
               <h1 className='title__text title__text--head'>Авторизация</h1>
             </div>
-            <form className='login__form'>
+            <form className='login__form' onSubmit={handleSubmit}>
               <div className='login__input'>
                 <div className='login__input-wrapper'>
                   <label htmlFor='IdInstance'> IdInstance </label>
@@ -20,6 +42,7 @@ export default function LoginPage() {
                     name='IdInstance'
                     required
                     placeholder='1234567890'
+                    ref={idInstanceRef}
                   />
                 </div>
                 <div className='login__input-wrapper'>
@@ -30,6 +53,7 @@ export default function LoginPage() {
                     name='ApiTokenInstance'
                     required
                     placeholder='57634gdh5fds36744e2a376f5f8g9h6y3d0v4'
+                    ref={apiTokenInstanceRef}
                   />
                 </div>
               </div>
@@ -45,6 +69,7 @@ export default function LoginPage() {
                     name='IdInstance'
                     required
                     placeholder='79004443388'
+                    ref={numberPhoneContactRef}
                   />
                 </div>
                 <div className='login__input-wrapper login__input-wrapper--button'>
