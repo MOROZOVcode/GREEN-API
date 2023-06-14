@@ -1,7 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './chat-page.css';
+import { AppRoute } from '../../const';
 
 export default function ChatPage() {
+  const navigate = useNavigate();
+
+  const handleExit = (evt) => {
+    evt.preventDefault();
+    navigate(AppRoute.login);
+  };
+
   return (
     <div className='page page__chat'>
       <main className='chat'>
@@ -20,7 +28,7 @@ export default function ChatPage() {
               </div>
             </div>
             <div className='chat__exit'>
-              <Link to='/' className='chat__exit-link'>
+              <Link to={''} className='chat__exit-link' onClick={handleExit}>
                 <img
                   className='chat__exit-img'
                   src='img/exit.svg'
