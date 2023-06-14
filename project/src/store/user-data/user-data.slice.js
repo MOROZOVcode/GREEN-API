@@ -4,7 +4,7 @@ import { NameSpace } from '../../const';
 const initialState = {
   idInstance: null,
   apiTokenInstance: '',
-  numberPhone: null,
+  numberPhoneContact: null,
 };
 
 export const userData = createSlice({
@@ -17,10 +17,11 @@ export const userData = createSlice({
     setApiTokenUser: (state, action) => {
       state.apiTokenInstance = action.payload;
     },
-    addNumberPhone: (state, action) => {
-      state.numberPhone = action.payload;
+    addnumberPhoneContact: (state, action) => {
+      state.numberPhoneContact = action.payload;
     },
   },
 });
 
-export const { setIdUser, setApiTokenUser, addNumberPhone } = userData.actions;
+export const { setIdUser, setApiTokenUser, addnumberPhoneContact } =
+  userData.actions;
