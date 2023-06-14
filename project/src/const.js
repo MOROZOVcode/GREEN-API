@@ -12,3 +12,8 @@ export const APIRoute = {
   deleteNot: '/deleteNotification',
   sendMessage: '/sendMessage',
 };
+
+export const AppRoute = {
+  login: '/',
+  chat: '/chat',
+};

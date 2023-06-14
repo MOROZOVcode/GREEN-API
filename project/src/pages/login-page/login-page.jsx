@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../hooks';
 import {
   setApiTokenUser,
@@ -6,9 +7,11 @@ import {
 } from '../../store/user-data/user-data.slice';
 import './login-page.css';
 import { useRef } from 'react';
+import { AppRoute } from '../../const';
 
 export default function LoginPage() {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const idInstanceRef = useRef(null);
   const apiTokenInstanceRef = useRef(null);
@@ -21,6 +24,7 @@ export default function LoginPage() {
     dispatch(
       setNumberPhoneContact(Number(numberPhoneContactRef.current.value))
     );
+    navigate(AppRoute.chat);
   };
 
   return (
