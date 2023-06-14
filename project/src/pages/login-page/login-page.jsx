@@ -19,7 +19,7 @@ export default function LoginPage() {
                     type='text'
                     name='IdInstance'
                     required
-                    placeholder='gd56Y3GJSGT'
+                    placeholder='1234567890'
                   />
                 </div>
                 <div className='login__input-wrapper'>
@@ -29,7 +29,7 @@ export default function LoginPage() {
                     type='text'
                     name='ApiTokenInstance'
                     required
-                    placeholder='gd56Y3GJSGT'
+                    placeholder='57634gdh5fds36744e2a376f5f8g9h6y3d0v4'
                   />
                 </div>
               </div>
@@ -44,7 +44,7 @@ export default function LoginPage() {
                     type='number'
                     name='IdInstance'
                     required
-                    placeholder='+79955836252'
+                    placeholder='79004443388'
                   />
                 </div>
                 <div className='login__input-wrapper login__input-wrapper--button'>

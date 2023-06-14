@@ -67,18 +67,18 @@
 	overflow-y: scroll;
 }
 
-.chat__wrapper-mesage {
+.chat__wrapper-message {
 	display: flex;
 	width: 100%;
 	margin: 0.5rem auto;
 }
 
-.chat__wrapper-mesage.sent {
+.chat__wrapper-message.sent {
 	width: 100%;
 	justify-content: flex-end;
 }
 
-.chat__mesage {
+.chat__message {
 	max-width: 45%;
 	background: #4CAA85;
 	box-shadow: inset 0px -6px 13px rgba(0, 0, 0, 0.15);
@@ -88,12 +88,12 @@
 	word-break: break-word;
 }
 
-.chat__mesage.sent {
+.chat__message.sent {
 	background: #4CAA85;
 	border-top-right-radius: 0;
 }
 
-.chat__mesage.received {
+.chat__message.received {
 	background: #646C71;
 	border-top-left-radius: 0;
 }
@@ -143,7 +143,7 @@
 		padding: 0 1rem;
 	}
 
-	.chat__mesage {
+	.chat__message {
 		max-width: 85%;
 	}
 
