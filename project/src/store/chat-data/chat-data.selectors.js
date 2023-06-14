@@ -1,3 +1,5 @@
 import { NameSpace } from '../../const';
 
-export const getNewMessage = (state) => state[NameSpace.chat].newMessage;
+export const getReceiptId = (state) => state[NameSpace.chat].receiptId;
+export const getIdMessage = (state) => state[NameSpace.chat].idMessage;
+export const getTextMessage = (state) => state[NameSpace.chat].textMessage;
