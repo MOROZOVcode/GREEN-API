@@ -6,6 +6,28 @@
 
 ---
 
+### - Скриншоты интерфейса сайта:
+
+![screenshot](https://github.com/MOROZOVcode/GREEN-API/blob/master/forReadme/screenshot1.png)
+
+![screenshot](https://github.com/MOROZOVcode/GREEN-API/blob/master/forReadme/screenshot2.png)
+
+### - Скриншоты интерфейса сайта (мобильная версия):
+
+<img src="https://github.com/MOROZOVcode/GREEN-API/blob/master/forReadme/screenshot_mobile1.png" alt="screenshot" width="40%"/>
+
+<br>
+
+<img src="https://github.com/MOROZOVcode/GREEN-API/blob/master/forReadme/screenshot_mobile2.png" alt="screenshot" width="40%"/>
+
+<br>
+
+---
+
+> Открыть сайт можно по ссылке: [green-api-morozovcode.vercel.app](https://green-api-morozovcode.vercel.app/)
+
+---
+
 ### Инструкция по запуску этого проекта у себя
 
 1. **Склонировать репозиторий:**
@@ -38,7 +60,3 @@ $ npm install
 ```
 $ npm start
 ```
-
----
-
-> Открыть сайт можно по ссылке: [green-api-morozovcode.vercel.app](https://green-api-morozovcode.vercel.app/)
