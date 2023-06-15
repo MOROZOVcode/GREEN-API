@@ -17,3 +17,8 @@ export const AppRoute = {
   login: '/',
   chat: '/chat',
 };
+
+export const messageClass = {
+  received: 'received',
+  sent: 'sent',
+};
