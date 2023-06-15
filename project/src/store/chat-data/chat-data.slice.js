@@ -6,12 +6,17 @@ const initialState = {
   receiptId: null,
   idMessage: null,
   textMessage: '',
+  messagesList: [],
 };
 
 export const chatData = createSlice({
   name: NameSpace.chat,
   initialState,
-  reducers: {},
+  reducers: {
+    setMessagesList: (state, action) => {
+      state.messagesList = action.payload;
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(fetchMessageAction.fulfilled, (state, action) => {
