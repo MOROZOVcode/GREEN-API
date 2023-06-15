@@ -31,3 +31,5 @@ export const chatData = createSlice({
       });
   },
 });
+
+export const { setMessagesList } = chatData.actions;
