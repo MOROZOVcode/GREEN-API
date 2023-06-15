@@ -5,6 +5,7 @@ import { NameSpace } from '../../const';
 const initialState = {
   receiptId: null,
   idMessage: null,
+  chatId: '',
   textMessage: '',
   messagesList: [],
 };
@@ -22,6 +23,7 @@ export const chatData = createSlice({
       .addCase(fetchMessageAction.fulfilled, (state, action) => {
         state.receiptId = action.payload.receiptId;
         state.idMessage = action.payload.body.idMessage;
+        state.chatId = action.payload.body.senderData.chatId;
         state.textMessage =
           action.payload.body.messageData.textMessageData.textMessage;
       })

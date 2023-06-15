@@ -25,9 +25,16 @@ export const dropMessageAction = createAsyncThunk(
 
 export const sendMessageAction = createAsyncThunk(
   'chat/sendMessage',
-  async ({ idInstance, apiTokenInstance }, { dispatch, extra: api }) => {
+  async (
+    { idInstance, apiTokenInstance, chatId, message },
+    { dispatch, extra: api }
+  ) => {
     await api.post(
-      `${APIRoute.idInstance}${idInstance}${APIRoute.sendMessage}/${apiTokenInstance}`
+      `${APIRoute.idInstance}${idInstance}${APIRoute.sendMessage}/${apiTokenInstance}`,
+      {
+        chatId,
+        message,
+      }
     );
   }
 );
