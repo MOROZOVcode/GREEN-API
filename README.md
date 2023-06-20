@@ -28,6 +28,8 @@
 
 > Открыть сайт можно по ссылке: [green-api-morozovcode.vercel.app](https://green-api-morozovcode.vercel.app/)
 
+> В моём личном блоге есть [_**пост**_](https://t.me/morozov_code/112) об этом проекте.
+
 ---
 
 ### Инструкция по запуску этого проекта у себя
